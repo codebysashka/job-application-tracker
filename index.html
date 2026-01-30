@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+		rel="stylesheet">
+	<script src="https://unpkg.com/@phosphor-icons/web"></script>
+	<script src="script.js" defer></script>
+	<title>Job Application Tracker</title>
+</head>
+
+<body>
+	<header class="header">
+		<h1 class="title">Job Application Tracker</h1>
+		<button id="add-btn"><i class="ph ph-plus"></i> New Job</button>
+	</header>
+	<main class="board">
+		<div class="column" id="wishlist">
+			<h3>Wishlist <span class="count">1</span></h3>
+			<div class="task-list">
+				<div class="job-card" draggable="true">
+					<div class="card-header">
+						<h4 class="job-title">Frontend Developer</h4>
+						<button class="delete-btn"><i class="ph ph-trash"></i></button>
+					</div>
+					<span class="company">Google</span>
+					<div class="card-footer">
+						<div class="tags">
+							<span class="tag">Remote</span>
+							<span class="tag">150k</span>
+						</div>
+						<a href="#" class="link-icon">Link to vacancy <i class="ph ph-arrow-square-out"></i></a>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+
+		<div class="column" id="applied">
+			<h3>Applied <span class="count">0</span></h3>
+			<div class="task-list"></div>
+		</div>
+
+		<div class="column" id="test-assignment">
+			<h3>Test Assignment <span class="count">0</span></h3>
+			<div class="task-list"></div>
+		</div>
+
+		<div class="column" id="interview">
+			<h3>Interview <span class="count">0</span></h3>
+			<div class="task-list"></div>
+		</div>
+
+		<div class="column" id="offer">
+			<h3>Offer <span class="count">0</span></h3>
+			<div class="task-list"></div>
+		</div>
+
+	</main>
+</body>
+
+</html>
