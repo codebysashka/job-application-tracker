@@ -16,7 +16,13 @@
 <body>
 	<header class="header">
 		<h1 class="title">Job Application Tracker</h1>
-		<button id="add-btn"><i class="ph ph-plus"></i> New Job</button>
+		<div class="header-actions">
+			<div class="search-wrapper">
+				<i class="ph ph-magnifying-glass"></i>
+				<input type="text" placeholder="Search job...">
+			</div>
+			<button id="add-btn"><i class="ph ph-plus"></i> New Job</button>
+		</div>
 	</header>
 	<main class="board">
 		<div class="column" id="wishlist">
@@ -35,14 +41,19 @@
 						</div>
 						<a href="#" class="link-icon">Link to vacancy <i class="ph ph-arrow-square-out"></i></a>
 					</div>
-					
+
 				</div>
 			</div>
 		</div>
 
 		<div class="column" id="applied">
 			<h3>Applied <span class="count">0</span></h3>
-			<div class="task-list"></div>
+			<div class="task-list">
+				<div class="empty-placeholder">
+					<i class="ph ph-tray"></i>
+					<span>No jobs yet</span>
+				</div>
+			</div>
 		</div>
 
 		<div class="column" id="test-assignment">
