@@ -166,8 +166,10 @@ a {
 	flex-direction: column;
 	gap: 16px;
 	overflow-y: auto;
+	overflow-x: hidden;
 	min-height: 100px;
-	padding: 4px;
+	padding: 30px;
+	margin: -20px;
 }
 
 .job-card {
